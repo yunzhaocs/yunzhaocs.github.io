@@ -52,10 +52,7 @@
     #sidebar nav li {
       margin: 0.5em 0;
     }
-    #sidebar nav a {
-      font-weight: 600;
-      /* Links in nav can use bold weight for clarity */
-    }
+    #sidebar nav a { font-weight: 600; }
     main {
       margin-left: 240px; /* space for sidebar */
       padding: 20px;
@@ -69,24 +66,16 @@
       flex-wrap: wrap;  /* allow stacking on small screens */
       margin-bottom: 2em;
     }
-    .hero-text {
-      max-width: 60%;
-    }
-    .hero-text h1 {
-      font-size: 2.2em;
-      margin-bottom: 0.1em;
-    }
+    .hero-text { max-width: 60%; }
+    .hero-text h1 { font-size: 2.2em; margin-bottom: 0.1em; }
     .hero-text h2 {
       font-size: 1.3em;
-      font-family: 'Inter', sans-serif; /* use sans-serif for position to distinguish */
+      font-family: 'Inter', sans-serif;
       font-weight: 500;
       color: #333;
       margin-bottom: 0.5em;
     }
-    .hero-text .research-areas {
-      font-style: italic;
-      color: #555;
-    }
+    .hero-text .research-areas { font-style: italic; color: #555; }
     .hero-image img {
       width: 180px;
       height: auto;
@@ -94,9 +83,7 @@
       border-radius: 4px;
     }
     /* Section styles */
-    section {
-      margin-bottom: 2em;
-    }
+    section { margin-bottom: 2em; }
     section h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.2em;
@@ -110,12 +97,10 @@
     }
     #publications ul {
       list-style: disc inside;
-      margin: 0.5em 0 1.5em 0;  /* space between groups */
+      margin: 0.5em 0 1.5em 0;
       padding: 0;
     }
-    #publications li {
-      margin: 0.5em 0;
-    }
+    #publications li { margin: 0.5em 0; }
     /* Profile links styling */
     .profile-links {
       list-style: none;
@@ -131,36 +116,16 @@
       margin-left: 10px;
       color: #999;
     }
-    .profile-links li:last-child a::after {
-      content: "";
-    }
+    .profile-links li:last-child a::after { content: ""; }
     /* Contact obfuscation (optional style) */
-    .obfuscate {
-      unicode-bidi: bidi-override;
-      direction: rtl;
-    }
+    .obfuscate { unicode-bidi: bidi-override; direction: rtl; }
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      #sidebar {
-        position: static;
-        width: auto;
-        height: auto;
-        border: none;
-        padding: 10px;
-      }
-      main {
-        margin-left: 0;
-        padding: 15px;
-      }
-      .hero-text {
-        max-width: 100%;
-      }
-      .hero {
-        justify-content: flex-start;
-      }
-      .hero-image {
-        margin-top: 1em;
-      }
+      #sidebar { position: static; width: auto; height: auto; border: none; padding: 10px; }
+      main { margin-left: 0; padding: 15px; }
+      .hero-text { max-width: 100%; }
+      .hero { justify-content: flex-start; }
+      .hero-image { margin-top: 1em; }
     }
   </style>
 </head>
@@ -176,6 +141,7 @@
         <li><a href="#service">Service</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#social">Social</a></li>
       </ul>
     </nav>
   </aside>
@@ -193,17 +159,22 @@
       </div>
     </section>
 
-
-      <!-- About Section -->
-  <section id="about" class="container">
-    <div class="card">
+    <!-- About Section -->
+    <section id="about">
       <h2>About</h2>
-      <p>Dr. Yun Zhao is a research scientist at <a href="https://about.fb.com/" target="_blank" rel="noreferrer noopener">Meta Platforms, Inc.</a> in Menlo Park, California. He received his Ph.D. in Computer Science from the University of California, Santa Barbara in 2021, advised by <a href="https://engineering.ucsb.edu/people/linda-petzold" target="_blank" rel="noreferrer noopener">Prof. Linda Petzold</a>. Previously, he earned an M.E. from Tsinghua University (advisor: <a href="https://scholar.google.com/citations?user=gnxgnwQAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">Prof. Zhisheng Niu</a>) and a B.E. from Zhejiang University. His work has been recognized with the Best Paper Award (DMBIH’21) and the Best Student Paper Award (ACM-BCB’22).</p>
-      <div class="chips">
-      </div>
-    </div>
-  </section>
-
+      <p>
+        Dr. Yun Zhao is a research scientist at
+        <a href="https://about.fb.com/" target="_blank" rel="noreferrer noopener">Meta Platforms, Inc.</a>
+        in Menlo Park, California. He received his Ph.D. in Computer Science from the University of California, Santa Barbara in 2021, advised by
+        <a href="https://engineering.ucsb.edu/people/linda-petzold" target="_blank" rel="noreferrer noopener">Prof. Linda Petzold</a>.
+        Previously, he earned an M.E. from Tsinghua University (advisor:
+        <a href="https://scholar.google.com/citations?user=gnxgnwQAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">Prof. Zhisheng Niu</a>)
+        and a B.E. from Zhejiang University. His work has been recognized with the
+        <a href="./BestPaperAward2021.pdf">Best Paper Award (DMBIH’21)</a>
+        and the
+        <a href="./BCB22_best_student_paper_award.pdf">Best Student Paper Award (ACM-BCB’22)</a>.
+      </p>
+    </section>
 
     <!-- Research Interests Section -->
     <section id="research">
@@ -222,72 +193,68 @@
 
       <h3>2024</h3>
       <ul>
-        <li>Yuqing Wang, Yun Zhao, “Metacognitive prompting improves understanding in large language models”, in <em>NAACL, 2024</em>. <a href="https://arxiv.org/abs/2308.07851">PDF</a></li>
-        <li>Yuqing Wang, Yun Zhao, “TRAM: Benchmarking Temporal Reasoning for Large Language Models”, in <em>ACL, 2024</em>. <a href="https://arxiv.org/abs/2305.14045">PDF</a></li>
-        <li>Yuqing Wang, Yun Zhao, “Gemini in Reasoning: Unveiling Commonsense in Multimodal Large Language Models”, <em>in submission, 2024</em>. <a href="https://arxiv.org/abs/2307.12345">PDF</a></li>
-        <li>Yuqing Wang, Yun Zhao, Linda Petzold, “An empirical study on the robustness of the Segment Anything Model (SAM)”, in <em>Pattern Recognition, 2024</em>. <a href="https://arxiv.org/abs/2303.45678">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u>, “Metacognitive prompting improves understanding in large language models”, in <em>NAACL, 2024</em>. <a href="https://arxiv.org/abs/2308.05342">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u>, “TRAM: Benchmarking Temporal Reasoning for Large Language Models”, in <em>ACL, 2024</em>. <a href="https://arxiv.org/abs/2310.00835">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u>, “Gemini in Reasoning: Unveiling Commonsense in Multimodal Large Language Models”, <em>in submission, 2024</em>. <a href="https://arxiv.org/abs/2312.17661">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u>, Linda Petzold, “An empirical study on the robustness of the Segment Anything Model (SAM)”, in <em>Pattern Recognition, 2024</em>. <a href="https://arxiv.org/abs/2305.06422">PDF</a></li>
       </ul>
 
       <h3>2023</h3>
       <ul>
-        <li>Yuqing Wang, Yun Zhao, Linda Petzold, “Are Large Language Models Ready for Healthcare? A Comparative Study on Clinical Language Understanding”, in <em>Machine Learning for Healthcare Conference (PMLR), 2023</em>. <a href="https://arxiv.org/abs/2301.06233">PDF</a></li>
-        <li>Yu Deng, Lei Liu, Hongmei Jiang, Yifan Peng, Yishu Wei, Zhiyang Zhou, Yizhen Zhong, Yun Zhao, *et al.*, “Comparison of State-of-the-Art Neural Network Survival Models with the Pooled Cohort Equations for Cardiovascular Disease Risk Prediction”, in <em>BMC Medical Research Methodology, 2023</em>. <a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-023-01942-6">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u>, Linda Petzold, “Are Large Language Models Ready for Healthcare? A Comparative Study on Clinical Language Understanding”, in <em>Machine Learning for Healthcare Conference (PMLR), 2023</em>. <a href="https://arxiv.org/abs/2304.05368">PDF</a></li>
+        <li>Yu Deng, Lei Liu, Hongmei Jiang, Yifan Peng, Yishu Wei, Zhiyang Zhou, Yizhen Zhong, <u>Yun Zhao</u>, Xiaoyun Yang, Jingzhi Yu, Zhiyong Lu, Abel Kho, Hongyan Ning, Norrina B. Allen, John Wilkins, Kiang Liu, Donald Lloyd-Jones, Lihui Zhao, “Comparison of State-Of-The-Art Neural Network Survival Models With The Pooled Cohort Equations for Cardiovascular Disease Risk Prediction”, in <em>BMC Medical Research Methodology, 2023</em>. <a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-022-01829-w">PDF</a></li>
       </ul>
 
       <h3>2022</h3>
       <ul>
-        <li>Haotian Xia, Rhys Tracy, Yun Zhao, Erwan Fraisse, Yuan-Fang Wang, Linda Petzold, “VREN: Volleyball Rally Dataset with Expression Notation Language”, in <em>IEEE ICKG, 2022</em>. <a href="https://arxiv.org/abs/2207.98765">PDF</a></li>
-        <li>Zhuowei Cheng, Franklin Ly, Tyler Santander, Elyes Turki, Yun Zhao, *et al.*, “Preliminary study: quantification of chronic pain from physiological data”, in <em>Pain Reports, 2022</em>. <a href="https://journals.lww.com/painrpts/Fulltext/2022/12000/Preliminary_study__quantification_of_chronic_pain.6.aspx">PDF</a></li>
-        <li>Yuqing Wang, Yun Zhao, Linda Petzold, “Predicting the Need for Blood Transfusion in Intensive Care Units with Reinforcement Learning”, in <em>ACM-BCB, 2022</em>. <a href="https://arxiv.org/abs/2208.12345">PDF</a> <strong>(Best Student Paper Award)</strong></li>
-        <li>Yuqing Wang*, Yun Zhao*, Linda Petzold, “Integrating Physiological Time Series and Clinical Notes with Transformer for Early Prediction of Sepsis”, in <em>IEEE ICDM, 2022</em>. <a href="https://arxiv.org/abs/2206.54321">PDF</a></li>
-        <li>Yuqing Wang, Yun Zhao, Linda Petzold, “Enhancing Transformer Efficiency for Multivariate Time Series Classification”, in <em>IEEE ICDM, 2022</em>. <a href="https://arxiv.org/abs/2206.98765">PDF</a></li>
+        <li>Haotian Xia, Rhys Tracy, <u>Yun Zhao</u>, Erwan Fraisse, Yuan-Fang Wang, Linda Petzold, “VREN: Volleyball Rally Dataset with Expression Notation Language”, in <em>IEEE ICKG, 2022</em>. <a href="https://arxiv.org/abs/2209.13846">PDF</a></li>
+        <li>Zhuowei Cheng, Franklin Ly, Tyler Santander, Elyes Turki, <u>Yun Zhao</u>, Jamie Yoo, Kian Lonergan, Jordan Gray, Christopher H Li, Henry Yang, Michael Miller, Paul Hansma, Linda Petzold, “Preliminary study: quantification of chronic pain from physiological data”, in <em>Pain Reports, 2022</em>. <a href="https://journals.lww.com/painrpts/Fulltext/2022/12000/Preliminary_study__quantification_of_chronic_pain.4.aspx?context=LatestArticles">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u> and Linda Petzold, “Predicting the Need for Blood Transfusion in Intensive Care Units with Reinforcement Learning”, in <em>ACM-BCB, 2022</em>. <a href="https://arxiv.org/abs/2206.14198">PDF</a> <strong>(Best Student Paper Award)</strong></li>
+        <li>Yuqing Wang*, <u>Yun Zhao*</u> and Linda Petzold, “Integrating Physiological Time Series and Clinical Notes with Transformer for Early Prediction of Sepsis”, in <em>IEEE ICDM, 2022</em>. <a href="https://arxiv.org/abs/2203.14469">PDF</a></li>
+        <li>Yuqing Wang, <u>Yun Zhao</u> and Linda Petzold, “Enhancing Transformer Efficiency for Multivariate Time Series Classification”, in <em>IEEE ICDM, 2022</em>. <a href="https://arxiv.org/abs/2203.14472">PDF</a></li>
       </ul>
 
       <h3>2021</h3>
       <ul>
-        <li>Yun Zhao*, Yuqing Wang*, Junfeng Liu, Haotian Xia, Zhenni Xu, Qinghang Hong, Zhiyang Zhou, Linda Petzold, “Empirical Quantitative Analysis of COVID-19 Forecasting Models”, in <em>IEEE ICDM Workshops, 2021</em>. <a href="https://arxiv.org/abs/2112.11111">PDF</a> <strong>(Best Paper Award)</strong></li>
-        <li>Yun Zhao, “Data Mining in Neuroscience and Healthcare”, Ph.D. Thesis, UC Santa Barbara, 2021. <a href="https://escholarship.org/uc/item/12345678">PDF</a></li>
-        <li>Xinlu Zhang*, Yun Zhao*, Rachael Callcut, Linda Petzold, “Multiple Organ Failure Prediction with Classifier-Guided Generative Adversarial Imputation Networks”, in <em>BIOKDD Workshop, 2021</em>. <a href="https://arxiv.org/abs/2108.12345">PDF</a></li>
-        <li>Yun Zhao, Qinghang Hong, Xinlu Zhang, Yu Deng, Yuqing Wang, Linda Petzold, “BERTSurv: BERT-Based Survival Models for Predicting Outcomes of Trauma Patients”, in <em>IEEE ICDM, 2021</em>. <a href="https://arxiv.org/abs/2106.22222">PDF</a></li>
-        <li>Yuqing Wang*, Yun Zhao*, Rachael Callcut, Linda Petzold, “Empirical Analysis of Machine Learning Configurations for Prediction of Multiple Organ Failure in Trauma Patients”, in <em>IEEE ICDM, 2021</em>. <a href="https://arxiv.org/abs/2106.33333">PDF</a></li>
+        <li><u>Yun Zhao</u>*, Yuqing Wang*, Junfeng Liu, Haotian Xia, Zhenni Xu, Qinghang Hong, Zhiyang Zhou, Linda Petzold, “Empirical Quantitative Analysis of COVID-19 Forecasting Models”, in <em>IEEE ICDM Workshops, 2021</em>. <a href="https://arxiv.org/abs/2110.00174">PDF</a> <strong>(Best Paper Award)</strong></li>
+        <li><u>Yun Zhao</u>, “Data Mining in Neuroscience and Healthcare”, Ph.D. Thesis, UC Santa Barbara, 2021. <a href="https://escholarship.org/uc/item/7xf4z5m6">PDF</a></li>
+        <li>Xinlu Zhang*, <u>Yun Zhao*</u>, Rachael Callcut and Linda Petzold, “Multiple Organ Failure Prediction with Classifier-Guided Generative Adversarial Imputation Networks”, in <em>BIOKDD Workshop, 2021</em>. <a href="https://arxiv.org/pdf/2106.11878.pdf">PDF</a></li>
+        <li><u>Yun Zhao</u>, Qinghang Hong, Xinlu Zhang, Yu Deng, Yuqing Wang and Linda Petzold, “BERTSurv: BERT-Based Survival Models for Predicting Outcomes of Trauma Patients”, in <em>IEEE ICDM, 2021</em>. <a href="https://arxiv.org/abs/2103.10928">PDF</a></li>
+        <li>Yuqing Wang*, <u>Yun Zhao*</u>, Rachael Callcut and Linda Petzold, “Empirical Analysis of Machine Learning Configurations for Prediction of Multiple Organ Failure in Trauma Patients”, in <em>IEEE ICDM, 2021</em>. <a href="https://arxiv.org/abs/2103.10929">PDF</a></li>
       </ul>
 
       <h3>2020</h3>
       <ul>
-        <li>Yun Zhao, Franklin Ly, Qinghang Hong, Zhuowei Cheng, Tyler Santander, Henry T. Yang, Paul K. Hansma, Linda Petzold, “How Much Does It Hurt: A Deep Learning Framework for Chronic Pain Score Assessment”, in <em>DMBIH Workshop, 2020</em>. <a href="https://ieeexplore.ieee.org/document/9442799">PDF</a></li>
-        <li>Yun Zhao, Richard Jiang, Zhenni Xu, Elmer Guzman, Paul K. Hansma, Linda Petzold, “Scalable Bayesian Functional Connectivity Inference for Multi-Electrode Array Recordings”, in <em>BIOKDD Workshop, 2020</em>. <a href="http://www.biokdd.org/biokdd20/papers/BIOKDD_2020_paper_8.pdf">PDF</a></li>
+        <li><u>Yun Zhao</u>, Franklin Ly, Qinghang Hong, Zhuowei Cheng, Tyler Santander, Henry T. Yang, Paul K. Hansma, Linda Petzold, “How Much Does It Hurt: A Deep Learning Framework for Chronic Pain Score Assessment”, in <em>DMBIH Workshop, 2020</em>. <a href="https://ieeexplore.ieee.org/document/9346461">PDF</a></li>
+        <li><u>Yun Zhao</u>, Richard Jiang, Zhenni Xu, Elmer Guzman, Paul K. Hansma, Linda Petzold, “Scalable Bayesian Functional Connectivity Inference for Multi-Electrode Array Recordings”, in <em>BIOKDD Workshop, 2020</em>. <a href="http://biokdd.org/biokdd20/camera_ready/biokdd2020_yun.pdf">PDF</a></li>
       </ul>
 
       <h3>2019 and Earlier</h3>
       <ul>
-        <li>Yun Zhao, “An Auxiliary Classifier Generative Adversarial Framework for Relation Extraction”, <em>arXiv preprint, Sep 2019</em>. <a href="https://arxiv.org/abs/1909.01234">PDF</a></li>
-        <li>Yun Zhao, Sheng Zhou, Zhisheng Niu, “Energy-Efficient Task Offloading for Multiuser Mobile Cloud Computing”, in <em>IEEE ICCC, 2015</em>. <a href="https://ieeexplore.ieee.org/document/7393595">PDF</a></li>
-        <li>Tianchu Zhao, Sheng Zhou, Xueying Guo, Yun Zhao, Zhisheng Niu, “A Cooperative Scheduling Scheme of Local Cloud and Internet Cloud for Delay-Aware Mobile Cloud Computing”, in <em>IEEE Globecom Workshop, 2015</em>. <a href="https://arxiv.org/abs/1510.05107">PDF</a></li>
-        <li>Tianchu Zhao, Sheng Zhou, Xueying Guo, Yun Zhao, Zhisheng Niu, “Pricing Policy and Computational Resource Provisioning for Delay-Aware Mobile Edge Computing”, in <em>IEEE ICCC, 2016</em>. <a href="https://ieeexplore.ieee.org/document/7586544">PDF</a></li>
-        <li>Yangtian Yan, Bangcheng Sun, Yun Zhao, *et al.*, “A Bi-directional Visible Light Communication System Based on DTMB-A”, in <em>IEEE VTC, 2016</em>. <a href="http://network.ee.tsinghua.edu.cn/res/IC_VLC_DTMB-A.pdf">PDF</a></li>
-        <li>Xinyi Zhang, Shiliang Tang, Yun Zhao, Gang Wang, Haitao Zheng, Ben Y. Zhao, “Cold Hard E-Cash: Friends and Vendors in the Venmo Digital Payments System”, in <em>ICWSM, 2017</em>. <a href="https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15685">PDF</a></li>
-        <li>Yun Zhao, “Energy-Efficient Resource Allocation in Mobile Cloud Computing”, M.E. Thesis, Tsinghua University, 2017. <a href="https://github.com/yunzhaocs/yunzhaocs.github.io/raw/gh-pages/thesis_master.pdf">PDF</a></li>
+        <li><u>Yun Zhao</u>, “A Deep Learning Framework for Classification of in vitro Multi-Electrode Array Recordings”, in <em>IEEE ICDM, 2019</em>. <a href="https://arxiv.org/abs/1906.02241v1">PDF</a></li>
+        <li><u>Yun Zhao</u>, “An Auxiliary Classifier Generative Adversarial Framework for Relation Extraction”, <em>arXiv, 2019</em>. <a href="https://arxiv.org/abs/1909.05370">PDF</a></li>
+        <li><u>Yun Zhao</u>, Sheng Zhou, Zhisheng Niu, “Energy-Efficient Task Offloading for Multiuser Mobile Cloud Computing”, in <em>IEEE ICCC, 2015</em>. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7448613">PDF</a></li>
+        <li>Tianchu Zhao, Sheng Zhou, Xueying Guo, <u>Yun Zhao</u>, Zhisheng Niu, “A Cooperative Scheduling Scheme of Local Cloud and Internet Cloud for Delay-Aware Mobile Cloud Computing”, in <em>IEEE Globecom Workshop, 2015</em>. <a href="https://arxiv.org/pdf/1511.08540.pdf">PDF</a></li>
+        <li>Tianchu Zhao, Sheng Zhou, Xueying Guo, <u>Yun Zhao</u>, Zhisheng Niu, “Pricing policy and computational resource provisioning for delay-aware mobile edge computing”, in <em>IEEE ICCC, 2016</em>. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7636891">PDF</a></li>
+        <li>Yangtian Yan, Bangcheng Sun, <u>Yun Zhao</u>, Zhenhui Huang, Hui Yang, Jian Song, “A Bi-directional Visible Light Communication System Based on DTMB-A”, in <em>IEEE VTC, 2016</em>. <a href="http://network.ee.tsinghua.edu.cn/niulab/wp-content/uploads/2016/01/finalpaper.pdf">PDF</a></li>
+        <li>Xinyi Zhang, Shiliang Tang, <u>Yun Zhao</u>, Gang Wang, Haitao Zheng, Ben Y. Zhao, “Cold Hard E-Cash: Friends and Vendors in the Venmo Digital Payments System”, in <em>ICWSM, 2017</em>. <a href="https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/viewFile/15589/14824">PDF</a></li>
+        <li><u>Yun Zhao</u>, “Energy-efficient Resource Allocation in Mobile Cloud Computing”, M.E. Thesis. <a href="https://github.com/yunzhaocs/yunzhaocs.github.io/blob/gh-pages/thesis_master.pdf">PDF</a></li>
       </ul>
     </section>
 
-
-      <!-- Service -->
-  <section id="service" class="container">
-    <div class="card">
+    <!-- Service -->
+    <section id="service">
       <h2>Service</h2>
       <ul>
         <li>Program Committee Member – IEEE International Conference on Data Mining (ICDM) 2021</li>
         <li>Reviewer for journals and conferences in AI, machine learning, and data mining</li>
       </ul>
-    </div>
-  </section>
-    
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <span class="obfuscate">moc.liamg@ lmscnuY</span></p> <!-- "Yun Zhao's email (obfuscated)" -->
-      <!-- The above is "yuncsml@gmail.com" reversed via CSS for spam protection -->
+      <p>Email: <span class="obfuscate">moc.liamg@ lmscnuY</span></p> <!-- "yuncsml@gmail.com" reversed -->
     </section>
 
     <!-- Academic Profiles Section -->
@@ -297,11 +264,23 @@
         <li><a href="https://scholar.google.com/citations?user=30s9RtsAAAAJ" target="_blank">Google Scholar</a></li>
         <li><a href="https://www.semanticscholar.org/author/46317573" target="_blank">Semantic Scholar</a></li>
         <li><a href="https://orcid.org/0000-0002-5544-8983" target="_blank">ORCID</a></li>
-        <li><a href="https://dblp.org/pid/42/2862-1.html" target="_blank">DBLP</a></li>
-        <li><a href="https://www.researchgate.net/profile/Yun-Zhao-27" target="_blank">ResearchGate</a></li>
-        <li><a href="https://publons.com/researcher/3320705/yun-zhao/" target="_blank">Publons</a></li>
+        <li><a href="https://dblp.org/pid/42/2862-1" target="_blank">DBLP</a></li>
+        <li><a href="https://www.researchgate.net/profile/Yun-Zhao-10" target="_blank">ResearchGate</a></li>
+        <li><a href="https://publons.com/researcher/4207185/yun-zhao/" target="_blank">Publons</a></li>
+        <li><a href="https://arxiv.org/search/?query=Yun+Zhao&searchtype=author" target="_blank">arXiv</a></li>
       </ul>
     </section>
+
+    <!-- Social Networks (added back) -->
+    <section id="social">
+      <h2>Social</h2>
+      <ul class="profile-links">
+        <li><a href="https://twitter.com/incredible_csml" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/yun-zhao/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100013858691093" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+
   </main>
 
 </body>
